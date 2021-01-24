@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form action="#" class="form">
+      <h1 class="form--heading">Регистрация</h1>
+      <div class="form--email">
+        <label for="email" class="labels">E-mail</label>
+        <input
+          type="email"
+          id="email"
+          name="mail"
+          placeholder="example@site.domain"
+          required="required"
+          class="form--input"
+        />
+      </div>
+
+      <div class="form--password">
+        <div>
+          <label for="password" class="labels">Пароль</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="password"
+            required="required"
+            class="form--password"
+
+          />
+        </div>
+
+        <div>
+          <label for="repeat" class="labels">Повторите Пароль</label>
+          <input
+            type="password"
+            id="repeat"
+            name="repeat"
+            placeholder="password"
+            required="required"
+            class="form--password"
+
+          />
+        </div>
+      </div>
+
+      <div class="form--names">
+        <label for="names" class="labels">ФИО</label>
+        <input
+          type="text"
+          class="form--input"
+          name="name"
+          required="required"
+          placeholder="Игорев Игорь Игоревич"
+          id="names"
+        />
+      </div>
+      <div class="form--ages">
+        <label for="ages" class="labels">Возраст</label>
+        <input
+          type="text"
+          class="form--password"
+          name="age"
+          required="required"
+          placeholder="18"
+          id="ages"
+        />
+      </div>
+      <div class="btns">
+        <button type="submit" class="button btns--submit">Отправить</button>
+        <button type="reset" class="button btns--reset">Отмена</button>
+      </div>
+    </form>
+  </body>
+</html>
